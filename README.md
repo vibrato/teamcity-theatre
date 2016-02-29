@@ -8,7 +8,7 @@ Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in
 ### The home page: choose your team
 ![Choose your team](http://i.imgur.com/64YxBRb.png)
 
-### One view of a team: a selection of builds with live updates
+### Team view
 ![The dashboard screen](http://i.imgur.com/izZiWVd.png)
 
 ### Configuration: manage your views and their tiles
