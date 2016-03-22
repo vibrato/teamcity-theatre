@@ -34,6 +34,8 @@ Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in
 
 1. Download the latest release from the releases page
 2. Install this web application on a Windows Server in IIS. (See [msdn](https://msdn.microsoft.com/en-us/library/ha2y9493.aspx) for detailed instructions)
+    - Application pool should run with .NET 4.0 in integrated mode
+    - The server must have .NET framework 4.5 installed
 3. Modify the web.config. 
     - Look for the `teamCityConnectionSettings` element and enter a valid server-username-password combination.
     - Change appSetting `TeamCityTheatre.Workspace` to an appropriate folder or leave the default
