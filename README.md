@@ -42,6 +42,7 @@ Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in
     - Change appSetting `TeamCityTheatre.Workspace.ConfigurationFile` to an appropriate file name or leave the default
     - Change appSetting `TeamCityTheatrwe.PollingTimeOutInMilliSeconds` to an amount of milliseconds or leave the default
 4. Open the web application from a browser
+    - Make sure that you type the URL in lowercase
     - Open the configuration page from the main menu. 
         - If you see any errors in the console, your server or credentials are probably incorrect.
     - Add a new view
