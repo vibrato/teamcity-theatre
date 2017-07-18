@@ -1,4 +1,6 @@
-# TeamCity Theatre
+# TeamCity Theatre 
+
+[![Build Status](https://travis-ci.org/amoerie/teamcity-theatre.svg?branch=master)](https://travis-ci.org/amoerie/teamcity-theatre)
 
 A .NET MVC web application to monitor your TeamCity builds. 
 Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in all their red and green glory.
