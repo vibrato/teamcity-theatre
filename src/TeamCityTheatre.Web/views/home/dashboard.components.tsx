@@ -32,7 +32,7 @@ export const Dashboard =
 const Views = (props: { views: IView[] }) => (
   <div id="views">
     {props.views.map(view => (
-      <a className="btn btn-primary view" id={view.id} onClick={() => selectView(view)}>
+      <a className="btn btn-primary view" id={view.id} key={view.id} onClick={() => selectView(view)}>
         {view.name} <span className="badge">{view.tiles.length} tiles</span>
       </a>))}
   </div>
@@ -56,7 +56,7 @@ const View = (props: { view: IView, data: IViewData }) => (
     </button>
     <div id="tiles">
       <div className="tiles-wrapper">
-        {props.data.tiles.map(tile => <Tile view={props.view} data={tile}/>) }
+        {props.data.tiles.map(tile => <Tile key={tile.id} view={props.view} data={tile}/>) }
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ const Tile = (props: { view: IView, data: ITileData }) => {
     <div id={props.data.id} className={`tile ${buildStatus} ${height} col-xs-6 col-sm-4 col-md-3 col-lg-2`}>
       <h4 className="tile-title">{props.data.label}</h4>
       <div className="tile-builds">
-        { props.data.builds.map(build => <Build build={build} />) }
+        { props.data.builds.map(build => <Build key={build.id} build={build} />) }
       </div>
     </div>
   );
