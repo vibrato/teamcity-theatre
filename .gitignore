@@ -258,13 +258,14 @@ src/TeamCityTheatre.Web/wwwroot/css
 
 ### Don't include generated JS in source control
 src/TeamCityTheatre.Web/wwwroot/js
+src/TeamCityTheatre.Web/views/**/*.js
 
 ### Don't include Cake packages
 tools/
 
 ### Don't include build and publish artefacts from the build.cake scripts
-build-output/
-publish-output/
+/build-output/
+/publish-output/
 
 /.dotnet
 /src/.vs
