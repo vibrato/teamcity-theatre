@@ -17,15 +17,15 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.13",
-    "@types/react": "^15.0.38",
-    "@types/react-dom": "^15.5.1",
+    "@types/node": "^8.0.24",
+    "@types/react": "^16.0.2",
+    "@types/react-dom": "^15.5.3",
     "@types/react-sortable-hoc": "^0.6.0",
     "postcss-cli": "^4.1.0",
-    "postcss-nested": "^2.0.4",
+    "postcss-nested": "^2.1.2",
     "rimraf": "^2.6.1",
-    "typescript": "^2.4.1",
-    "webpack": "^3.3.0"
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.5"
   },
   "scripts": {
     "clean": "rimraf views/**/*.js views/**/*.js.map",
