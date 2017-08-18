@@ -1,4 +1,6 @@
-# TeamCity Theatre
+# TeamCity Theatre 
+
+[![Build Status](https://travis-ci.org/amoerie/teamcity-theatre.svg?branch=master)](https://travis-ci.org/amoerie/teamcity-theatre)
 
 A .NET MVC web application to monitor your TeamCity builds. 
 Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in all their red and green glory.
@@ -37,12 +39,14 @@ Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in
 2. Download and unzip the [the latest release](https://github.com/amoerie/teamcity-theatre/releases/tag/2.0)
 3. Add the following to the `appsettings.json` file:
 
+```
   "Connection": {
     "Url": "http://your-teamcity-server/",
     "Username": "your-teamcity-username",
     "Password": "your-teamcity-password"
   }
-  
+```
+
 4. (Optional) Change the location of the configuration.json file or leave the default
 5. Install this folder as a web application in IIS:
   - Application pool should use .NET CLR version 'No Managed Code'
