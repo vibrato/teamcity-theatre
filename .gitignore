@@ -266,3 +266,5 @@ tools/
 build-output/
 publish-output/
 
+/.dotnet
+/src/.vs
