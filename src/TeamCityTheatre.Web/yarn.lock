@@ -456,6 +456,14 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+create-react-class@^15.6.0:
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.0.tgz#ab448497c26566e1e29413e883207d57cfe7bed4"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -992,65 +1000,6 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno-compat@^3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno-compat/-/inferno-compat-3.7.1.tgz#fdf05fee94dfafb5684c73f15abd6ea8350a4152"
-  dependencies:
-    inferno "3.7.1"
-    inferno-component "3.7.1"
-    inferno-create-class "3.7.1"
-    inferno-create-element "3.7.1"
-    inferno-shared "3.7.1"
-    inferno-transition-group "2.1.1"
-    inferno-vnode-flags "3.7.1"
-    rc-css-transition-group-modern "^2.1.6"
-
-inferno-component@3.7.1, inferno-component@^3.4.3:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-3.7.1.tgz#145496541661b7c350fca9a0137f4c7f2f8a4a07"
-  dependencies:
-    inferno "3.7.1"
-    inferno-shared "3.7.1"
-    inferno-vnode-flags "3.7.1"
-
-inferno-create-class@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno-create-class/-/inferno-create-class-3.7.1.tgz#e5574e06859fa78a55cd7814973b25dfafad549f"
-  dependencies:
-    inferno-component "3.7.1"
-    inferno-shared "3.7.1"
-
-inferno-create-element@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-3.7.1.tgz#17a957c7f991e30da6f1869c9f8d0e6089caefc5"
-  dependencies:
-    inferno "3.7.1"
-    inferno-component "3.7.1"
-    inferno-shared "3.7.1"
-    inferno-vnode-flags "3.7.1"
-
-inferno-shared@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.7.1.tgz#3dc6a8b26ceb91e3baf7eb875809802c65bd7929"
-
-inferno-transition-group@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/inferno-transition-group/-/inferno-transition-group-2.1.1.tgz#067e9f6013354e1a9a18f74ca6092cf0059cf70e"
-  dependencies:
-    inferno "^3.4.3"
-    inferno-component "^3.4.3"
-
-inferno-vnode-flags@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.7.1.tgz#75483848c2d3cb16522c35abdc99e79b0967dd03"
-
-inferno@3.7.1, inferno@^3.4.3, inferno@^3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.7.1.tgz#11a2d485e53c3ae21b15b06fb2cf4973830946dd"
-  dependencies:
-    inferno-shared "3.7.1"
-    inferno-vnode-flags "3.7.1"
-
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -1297,7 +1246,7 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0, loose-envify@^1.3.1:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -1488,7 +1437,7 @@ oauth-sign@~0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
 
-object-assign@^4.0.1, object-assign@^4.1.0:
+object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
@@ -1729,7 +1678,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.7:
+prop-types@^15.5.10, prop-types@^15.5.7:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -1783,10 +1732,6 @@ randombytes@^2.0.0, randombytes@^2.0.1:
   dependencies:
     safe-buffer "^5.1.0"
 
-rc-css-transition-group-modern@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/rc-css-transition-group-modern/-/rc-css-transition-group-modern-2.1.6.tgz#e34d63752110ee2ccf5185cd6ba4c774cfdf1bb7"
-
 rc@^1.1.7:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.1.tgz#2e03e8e42ee450b8cb3dce65be1bf8974e1dfd95"
@@ -1796,6 +1741,15 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-dom@^15.6.1:
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
+
 react-sortable-hoc@^0.6.7:
   version "0.6.7"
   resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-0.6.7.tgz#e30d247bc36dd5a605430c331ac9cb50a5fa72a6"
@@ -1804,6 +1758,16 @@ react-sortable-hoc@^0.6.7:
     invariant "^2.2.1"
     lodash "^4.12.0"
     prop-types "^15.5.7"
+
+react@^15.6.1:
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
+  dependencies:
+    create-react-class "^15.6.0"
+    fbjs "^0.8.9"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.0"
+    prop-types "^15.5.10"
 
 read-cache@^1.0.0:
   version "1.0.0"

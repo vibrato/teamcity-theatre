@@ -20,12 +20,6 @@ module.exports = function (env) {
       path: path.resolve(__dirname, "wwwroot/js"),
       filename: "[name].js"
     },
-    resolve: {
-      alias: {
-        'react': 'inferno-compat',
-        'react-dom': 'inferno-compat'
-      }
-    },
     plugins: [
       new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
