@@ -82,23 +82,26 @@ const Tile = (props: { view: IView, data: ITileData }) => {
  * A single build in a tile
  */
 const Build = (props: { build: IDetailedBuild }) => {
-  const isFinished = props.build.state === "finished";
-  const isRunning = props.build.state === "running";
-  const isSuccess = props.build.status === BuildStatus.Success;
+  const { build } = props;
+  const isFinished = build.state === "finished";
+  const isRunning = build.state === "running";
+  const isSuccess = build.status === BuildStatus.Success;
 
-  const buildStatus = BuildStatus[props.build.status].toLowerCase();
-  const percentageCompleted = isFinished ? 100 : props.build.percentageComplete;
+  const buildStatus = BuildStatus[build.status].toLowerCase();
+  const percentageCompleted = isFinished ? 100 : build.percentageComplete;
   const progressBarTheme = isSuccess ? "progress-bar-success" : "progress-bar-danger";
   const progressBarAnimation = isRunning ? "progress-bar-striped active" : "";
 
   return (
-    <div id={props.build.id} className={`tile-build ${buildStatus}`}>
+    <div id={build.id} className={`tile-build ${buildStatus}`}>
       <div className="progress">
-        <div className={`progress-bar ${progressBarTheme} ${progressBarAnimation}`} style={{ width: `${percentageCompleted}%` }}>
-          {<Branch build={props.build} />}
-          {isFinished ? <FinishDate build={props.build} /> : null}
-          {isRunning ? <TimeRemaining build={props.build} /> : null }
-        </div>
+        <a href={build.webUrl} target="_blank">
+          <div className={`progress-bar ${progressBarTheme} ${progressBarAnimation}`} style={{ width: `${percentageCompleted}%` }}>
+            {<Branch build={build} />}
+            {isFinished ? <FinishDate build={build} /> : null}
+            {isRunning ? <TimeRemaining build={build} /> : null }
+          </div>
+        </a>
       </div>
     </div>
   );
