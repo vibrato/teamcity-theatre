@@ -20,7 +20,9 @@ namespace TeamCityTheatre.Core.QueryServices {
       var nonDefaultBranchBuilds = buildsOrderByStartDate.Where(b => !b.IsDefaultBranch)
         .GroupBy(b => b.BranchName)
         .Select(buildsPerBranch => buildsPerBranch.OrderByDescending(b => b.StartDate).First())
-        .Take(defaultBranchBuild != null ? view.DefaultNumberOfBranchesPerTile - 1 : view.DefaultNumberOfBranchesPerTile);
+        .Take(defaultBranchBuild != null
+          ? view.DefaultNumberOfBranchesPerTile - 1
+          : view.DefaultNumberOfBranchesPerTile);
       var builds = defaultBranchBuild != null
         ? new[] {defaultBranchBuild}.Concat(nonDefaultBranchBuilds)
         : nonDefaultBranchBuilds;

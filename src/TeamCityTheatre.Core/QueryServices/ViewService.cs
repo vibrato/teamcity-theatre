@@ -16,9 +16,10 @@ namespace TeamCityTheatre.Core.QueryServices {
 
     public async Task<ViewData> GetLatestViewDataAsync(string viewId) {
       var view = _viewDataService.GetViewById(Guid.Parse(viewId));
+      var tiles = await Task.WhenAll(view.Tiles.Select(t => _tileService.GetLatestTileDataAsync(view, t)).ToList());
       return new ViewData {
         Id = view.Id,
-        Tiles = await Task.WhenAll(view.Tiles.Select(t => _tileService.GetLatestTileDataAsync(view, t)))
+        Tiles = tiles
       };
     }
   }
