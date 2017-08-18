@@ -3,142 +3,134 @@
   padding: 25px;
   margin: 25px;
   font-size: 12px;
-}
 
-@media (min-width: 480px) {
-  #views .view {
+  .badge {
+    font-size: 1em;
+  }
+
+  @media (min-width: 480px) {
     font-size: 24px;
-  }
+  } @media (min-width: 768px) {
+  font-size: 56px;
+}
 }
 
-@media (min-width: 768px) {
-  #views .view {
-    font-size: 56px;
-  }
-}
+.view {
+  #tiles {
+    width: 100%;
 
-#views .view .badge {
-  font-size: 1em;
-}
-
-#view {
-  text-align: center;
-}
-
-#tiles {
-  width: 100%;
-}
-
-#tiles .tiles-wrapper {
-  margin: 0.25rem;
-}
-
-.tile {
-  color: #fff;
-  padding: 10px;
-  display: inline-block;
-
-  &.height-1 {
-    height: 185px;
-  }
-  &.height-2 {
-    height: 270px;
-  }
-  &.height-3 {
-    height: 355px;
-  }
-  &.height-4 {
-    height: 440px;
-  }
-  &.height-5 {
-    height: 525px;
-  }
-  &.height-6 {
-    height: 610px;
-  }
-  &.height-7 {
-    height: 695px;
-  }
-  &.height-8 {
-    height: 780px;
-  }
-  &.height-9 {
-    height: 865px;
-  }
-  &.height-10 {
-    height: 950px;
-  }
-
-  .tile-title {
-    display: block;
-    font-size: 35px;
-    text-align: center;
-    white-space: nowrap;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    .tile-status-icon {
-      display: none;
+    .tiles-wrapper {
+      margin: 0.25rem;
     }
-  }
 
-  &.success {
-    background: #499649;
-  }
-  &.error, &.failure {
-    background: #b2423f;
-  }
+    .tile {
+      color: #fff;
+      padding: 10px;
+      display: inline-block;
 
-  .tile-builds .tile-build {
-    box-shadow: 3px 3px 10px 3px rgba(71, 71, 71, 0.5);
-    border-radius: 15px;
-
-    .progress {
-      height: 70px;
-      background-color: #888;
-
-      .progress-bar {
-        text-align: left;
-        padding-left: 5px;
-        padding-top: 3px;
-
-        &.progress-bar-success {
-          background-color: #5cb85c;
-          color: #eee;
-
-          &:hover {
-            background-color: #76d776;
-          }
-        }
-
-        &.progress-bar-danger {
-          background-color: #d9534f;
-          color: #eee;
-
-          &:hover {
-            background-color: #fa5652;
-          }
-        }
+      &.height-1 {
+        height: 185px;
+      }
+      &.height-2 {
+        height: 270px;
+      }
+      &.height-3 {
+        height: 355px;
+      }
+      &.height-4 {
+        height: 440px;
+      }
+      &.height-5 {
+        height: 525px;
+      }
+      &.height-6 {
+        height: 610px;
+      }
+      &.height-7 {
+        height: 695px;
+      }
+      &.height-8 {
+        height: 780px;
+      }
+      &.height-9 {
+        height: 865px;
+      }
+      &.height-10 {
+        height: 950px;
       }
 
-      .branch {
-        font-size: 40px;
-        line-height: 45px;
+      .tile-title {
         display: block;
+        font-size: 35px;
+        text-align: center;
         white-space: nowrap;
-        overflow: visible;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        .tile-status-icon {
+          display: none;
+        }
       }
 
-      .remaining,
-      .execution-timestamp {
-        display: block;
-        font-size: 15px;
-        white-space: nowrap;
-        overflow: visible;
+      &.success {
+        background: #499649;
+      }
+      &.error, &.failure {
+        background: #b2423f;
       }
 
+      .tile-builds .tile-build {
+        box-shadow: 3px 3px 10px 3px rgba(71, 71, 71, 0.5);
+        border-radius: 15px;
+
+        .progress {
+          height: 70px;
+          background-color: #888;
+
+          .progress-bar {
+            text-align: left;
+            padding-left: 5px;
+            padding-top: 3px;
+
+            &.progress-bar-success {
+              background-color: #5cb85c;
+              color: #eee;
+
+              &:hover {
+                background-color: #76d776;
+              }
+            }
+
+            &.progress-bar-danger {
+              background-color: #d9534f;
+              color: #eee;
+
+              &:hover {
+                background-color: #fa5652;
+              }
+            }
+          }
+
+          .branch {
+            font-size: 40px;
+            line-height: 45px;
+            display: block;
+            white-space: nowrap;
+            overflow: visible;
+          }
+
+          .remaining,
+          .execution-timestamp {
+            display: block;
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: visible;
+          }
+
+        }
+      }
     }
   }
 }

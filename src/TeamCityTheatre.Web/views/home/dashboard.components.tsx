@@ -50,7 +50,7 @@ const tryRequestFullScreen = (event: MouseEvent<HTMLButtonElement>) => {
  * Details of a single view
  */
 const View = (props: { view: IView, data: IViewData }) => (
-  <div id={props.view.id}>
+  <div className="view" id={props.view.id}>
     <button role="button" className="btn btn-primary btn-xs" onClick={tryRequestFullScreen}>
       <i className="fa fa-expand"/> Full screen
     </button>
