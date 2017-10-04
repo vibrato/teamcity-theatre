@@ -84,7 +84,8 @@ Task("Publish")
 var applicationPoolSettings = new ApplicationPoolSettings() {
   Name = "TeamCityTheatre",
   ManagedRuntimeVersion = NO_MANAGED_CODE,
-  Autostart = true
+  Autostart = true,
+  LoadUserProfile = true
 };
 
 var applicationSettings = new ApplicationSettings() {
