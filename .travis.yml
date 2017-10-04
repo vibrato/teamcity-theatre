@@ -2,5 +2,9 @@ language: csharp
 mono: none
 dotnet: 1.0.4
 dist: trusty
+
+before_install:
+  - chmod +x ./publish.sh
+
 script:
   - ./publish.sh
