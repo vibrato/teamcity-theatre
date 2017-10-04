@@ -36,7 +36,7 @@ Stick a TV on the wall, open a browser there and enjoy your TeamCity projects in
 ### Windows IIS
 
 1. Ensure you have [.NET Core SDK](https://www.microsoft.com/net/download/core) installed 
-2. Download and unzip the [the latest release](https://github.com/amoerie/teamcity-theatre/releases/tag/2.0)
+2. Download and unzip the [the latest release](https://github.com/amoerie/teamcity-theatre/releases)
 3. Add the following to the `appsettings.json` file:
 
 ```
@@ -68,7 +68,7 @@ Open the web application from a browser
 ## Windows Compilation instructions
 
 1. Ensure you have [.NET Core SDK](https://www.microsoft.com/net/download/core) installed
-2. Ensure you have [Yarn](yarnpkg.com) installed
+2. Ensure you have [Yarn](https://yarnpkg.com) installed
 3. Execute "run publish.cmd"
 4. If all goes well, that should create a folder 'publish-output' which is all you need to host the application.
 5. (Optional) If you execute "publish to local IIS.cmd" it will also automatically configure IIS for you.
