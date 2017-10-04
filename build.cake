@@ -1,6 +1,6 @@
-#addin "Cake.IIS"
-#addin "Cake.FileHelpers"
-#addin "Cake.Yarn"
+#addin nuget:?package=Cake.IIS&version=0.2.2
+#addin nuget:?package=Cake.FileHelpers&version=1.0.4
+#addin nuget:?package=Cake.Yarn&version=0.3.1
 
 const string buildOutputFolderPath = "./build-output";
 const string publishOutputFolderPath = "./publish-output";
